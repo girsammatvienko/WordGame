@@ -42,7 +42,6 @@ public class GameControllerTest {
         )
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.*").value(objectMapper.writeValueAsString(resultGame)));
-        System.out.println(1);
     }
 
     private static List<String> toList(String[] string) {
